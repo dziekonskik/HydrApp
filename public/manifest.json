@@ -1,12 +1,12 @@
 {
-  "name": "WTF: PWA",
-  "short_name": "WTF: PWA",
-  "theme_color": "#2D2241",
-  "background_color": "#2D2241",
+  "name": "HydrApp - drink water!",
+  "short_name": "HydrApp",
+  "theme_color": "#3767AD",
+  "background_color": "#3767AD",
   "display": "standalone",
   "orientation": "portrait",
-  "scope": "/wtf-webpack-starter/",
-  "start_url": "/wtf-webpack-starter/",
+  "scope": "/HydrApp/",
+  "start_url": "/HydrApp/",
   "icons": [
     {
       "src": "pwa/manifest-icon-192.png",

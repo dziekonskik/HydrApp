@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
+    <title>HydrApp - drink water!</title>
     <meta name="description" content="Your project description" />
     <!-- Title -->
     <meta property="og:title" content="" />
@@ -18,7 +18,7 @@
     />
 
     <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
+    <link rel="manifest" href="manifest.json" />
 
     <link
       rel="apple-touch-icon"
@@ -145,9 +145,15 @@
     />
   </head>
   <body>
-    <div class="hello">
-      <img class="hello__logo" src="../assets/img/logo.svg" alt="WTF " />
-      <span class="hello__circles"></span>
-    </div>
+    <main class="wrapper">
+      <h1>HydrApp</h1>
+      <div class="glass">
+        <div class="glass__water">
+          <span class="glass__water--counter">7</span>
+        </div>
+      </div>
+      <button class="increment">dodaj szklankę</button>
+      <button class="decrement">odejmij szklankę</button>
+    </main>
   </body>
 </html>

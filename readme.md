@@ -1,8 +1,8 @@
 ![cover](https://cotenfrontend.pl/img/cover.png)
 
-# WTF Webpack Starter Kit 
+# HydrApp - drink water!
 
-Simple toolkit for your static websites development.
+This is a PWA app built as a project for WTF What The Frontend coding school
 
 ## How to use it?
 
@@ -15,4 +15,3 @@ Click on `Use this template` button to generate a new repository based on this s
 `npm run build` - runs build process for production
 
 `npm run publish` - runs build process and publish the page using `gh-pages` branch
-
