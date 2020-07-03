@@ -1,13 +1,48 @@
-@import "~normalize.css";
+@import '~normalize.css';
+@import '_variables';
 
-@import "_variables";
-@import "modules/hello.scss";
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
 
 body {
-  background: $wtf;
+  font-family: 'Roboto', sans-serif;
+  background: $main-color;
+}
+
+.extend {
+  max-width: 216px;
+  margin: 0 auto;
+  padding: 12px 34px;
+  cursor: pointer;
+}
+
+.app {
   color: #fff;
-  display: flex;
+  display: grid;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+
+  &__title {
+    font-size: 55px;
+    margin: 0 auto;
+  }
+
+  &__increment {
+    @extend .extend;
+    box-shadow: 0 4px 4px rgba(#000, 0.25);
+    border-radius: 4px;
+    border: none;
+  }
+
+  &__decrement {
+    @extend .extend;
+    border: none;
+    background: none;
+    font-size: 14px;
+    color: #f5e5e7;
+  }
 }
