@@ -12,7 +12,7 @@ body {
   background: $main-color;
 }
 
-.extend {
+.button-extend {
   max-width: 216px;
   margin: 0 auto;
   padding: 12px 34px;
@@ -32,14 +32,16 @@ body {
   }
 
   &__increment {
-    @extend .extend;
+    @extend .button-extend;
     box-shadow: 0 4px 4px rgba(#000, 0.25);
     border-radius: 4px;
     border: none;
+    font-size: 18px;
+    text-align: center;
   }
 
   &__decrement {
-    @extend .extend;
+    @extend .button-extend;
     border: none;
     background: none;
     font-size: 14px;
