@@ -1,0 +1,24 @@
+{
+  "name": "HydrApp - drink water!",
+  "short_name": "HydrApp",
+  "theme_color": "#3767AD",
+  "background_color": "#3767AD",
+  "display": "standalone",
+  "orientation": "portrait",
+  "scope": "/HydrApp/",
+  "start_url": "/HydrApp/",
+  "icons": [
+    {
+      "src": "pwa/manifest-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "pwa/manifest-icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    }
+  ]
+}
