@@ -31,6 +31,20 @@ body {
     margin: 0 auto;
   }
 
+  &__glass__total {
+    position: relative;
+  }
+
+  &__counter {
+    font-family: inherit;
+    font-size: 112px;
+    display: block;
+    z-index: 100;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+  }
+
   &__increment {
     @extend .button-extend;
     box-shadow: 0 4px 4px rgba(#000, 0.25);
