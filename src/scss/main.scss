@@ -31,18 +31,17 @@ body {
     margin: 0 auto;
   }
 
-  &__glass__total {
+  &__glass {
     position: relative;
   }
 
   &__counter {
     font-family: inherit;
     font-size: 112px;
-    display: block;
-    z-index: 100;
     position: absolute;
-    bottom: 50%;
+    top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   &__increment {

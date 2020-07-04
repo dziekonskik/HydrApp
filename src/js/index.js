@@ -6,44 +6,39 @@ registerSW();
 
 /* place your code below */
 
-let glassCounter = document.createElement('div');
-let counter = 0;
-
 const container = document.querySelector('.app__glass');
+let glassCounter = document.createElement('div');
+
+const key = new Date().toISOString().slice(0, 10);
+let counter = key ? localStorage.getItem(key) : 0;
+
 const addGlassButton = document.querySelector('.app__increment--js');
 const decrementGlassButton = document.querySelector('.app__decrement--js');
 
-const key = new Date().toISOString().slice(0, 10);
-console.log(key);
-
-function addGlass() {
-  console.log(counter);
-  return counter++;
-}
-
-function reduceGlass() {
-  return counter--;
-}
+glassCounter.classList.add('app__counter');
+!localStorage.getItem(key)
+  ? (glassCounter.innerHTML = localStorage.getItem(key))
+  : 0;
 
 function handleIncrementCounterButton() {
-  addGlass();
+  counter++;
+  key ? localStorage.setItem(key, counter) : null;
+  glassCounter.innerHTML = localStorage.getItem(key);
 }
 
 function handledecrementCounterButton() {
-  reduceGlass();
-}
-
-function styleCounter(counter) {
-  glassCounter.innerHTML = counter;
-  glassCounter.classList.add('app__counter');
+  counter--;
+  if (counter < 0) counter = 0;
+  key ? localStorage.setItem(key, counter) : null;
+  glassCounter.innerHTML = localStorage.getItem(key);
 }
 
 function appendCounterToContainer() {
   container.appendChild(glassCounter);
 }
 
-styleCounter();
 appendCounterToContainer();
+glassCounter.innerHTML = localStorage.getItem(key);
 
 addGlassButton.addEventListener('click', handleIncrementCounterButton);
 decrementGlassButton.addEventListener('click', handledecrementCounterButton);
